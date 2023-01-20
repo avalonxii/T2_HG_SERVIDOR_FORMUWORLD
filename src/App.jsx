@@ -1,9 +1,11 @@
-import Card from "./components/formulario/Card";
+import CardB from "./components/formulario/Card";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <Card />
+      <CardB />
     </div>
   );
 }
