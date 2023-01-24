@@ -3,12 +3,13 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
+import Logo from '../assets/img/logo.png'
 
 function NavScrollExample() {
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#">FormuWorld</Navbar.Brand>
+        <Navbar.Brand href="#"><img src={Logo} alt=""/></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll"/>
         <Navbar.Collapse id="navbarScroll" className="d-sm-block">
         <Container className="d-flex w-75">
