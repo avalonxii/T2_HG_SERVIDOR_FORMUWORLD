@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button"
 
 function Agregar() {
   return (
@@ -14,6 +15,7 @@ function Agregar() {
           <Form.Control as="textarea" rows={3} />
         </Form.Group>
       </Form>
+      <Button as="input" type="submit" value="Enviar" variant="outline-primary" className="rounded-4"/>
     </Container>
   );
 }
