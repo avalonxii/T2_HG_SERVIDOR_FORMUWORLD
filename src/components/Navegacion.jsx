@@ -6,12 +6,12 @@ import Button from "react-bootstrap/Button";
 
 function NavScrollExample() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container fluid >
+    <Navbar expand="lg">
+      <Container>
         <Navbar.Brand href="#">FormuWorld</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-        <Container className="d-flex " >
+        <Navbar.Toggle aria-controls="navbarScroll"/>
+        <Navbar.Collapse id="navbarScroll" className="d-sm-block">
+        <Container className="d-flex w-75">
           <Form className="w-50">
             <Form.Control
               type="search"
@@ -19,8 +19,9 @@ function NavScrollExample() {
               aria-label="Search"
             />
           </Form>
-          <Nav >
-            <Button href="#" variant="outline-secondary">
+          <Nav className="w-100 d-flex justify-content-end">
+            <Button href="#" variant="outline-secondary"  
+            className="sm-auto">
               Filtro
             </Button>
             <Button href="#" variant="outline-primary">
