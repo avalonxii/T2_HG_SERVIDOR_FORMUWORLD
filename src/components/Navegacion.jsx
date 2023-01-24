@@ -9,11 +9,11 @@ function NavScrollExample() {
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#"><img src={Logo} alt=""/></Navbar.Brand>
+        <Navbar.Brand href="#"><img src={Logo} alt="React Logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll"/>
-        <Navbar.Collapse id="navbarScroll" className="d-sm-block">
+        <Navbar.Collapse id="navbarScroll">
         <Container className="d-flex w-75">
-          <Form className="w-50">
+          <Form className="w-75">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -31,7 +31,6 @@ function NavScrollExample() {
           </Nav>
         </Container>
         </Navbar.Collapse>
-        
       </Container>
     </Navbar>
   );
