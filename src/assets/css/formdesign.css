@@ -1,0 +1,26 @@
+h1{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
+h4, h5{
+    font-family: 'Manrope', sans-serif;
+
+}
+
+#enviar{
+    margin:0 auto;
+}
+
+body{
+    background-color: #20d2d9;
+}
+
+#container{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 10px;
+}
