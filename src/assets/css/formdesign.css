@@ -10,6 +10,7 @@ h4, h5{
 
 #enviar{
     margin:0 auto;
+    margin-top:30px;
 }
 
 body{
@@ -19,8 +20,13 @@ body{
 #container{
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     margin: 0 auto;
     width: 70%;
-    margin-top: 10px;
+    margin-top: 5px;
+}
+
+#addButton{
+    margin-top: 15px;
+
 }

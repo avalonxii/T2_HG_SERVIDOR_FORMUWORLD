@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button"
 import '../assets/css/formdesign.css'
-import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBIcon, MDBInput } from 'mdb-react-ui-kit';
 
 
 
@@ -19,26 +19,28 @@ export default function DiseñoCrearFormulario(){
           <Form.Control type="text" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label><h4>Descripción</h4></Form.Label>
+          <Form.Label><h4>Describe tu formulario</h4></Form.Label>
           <Form.Control as="textarea" rows={3} />
         </Form.Group>
         <br/>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label><h4>Añade una pregunta: </h4></Form.Label>
-          <Form.Control type="text" />
-        </Form.Group>
+        <h4>Preguntas y respuestas</h4>
         <br/>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Label><h5>Respuestas</h5></Form.Label>
-          <Form.Control type="text" />
-        </Form.Group>
+        <MDBInput wrapperClass='mb-4' id='form9Example1' label='Añade una pregunta' />
+        <br/>
+        <MDBInput wrapperClass='mb-4' id='form9Example1' label='Respuestas' />
+        
       </Form>
-      <MDBBtn floating tag='a'>
+      <div class="text-center">
+      <MDBBtn floating tag='a' id="addButton">
       <MDBIcon fas icon='plus' />
     </MDBBtn>
+   
+      
       <br/>
       <Button as="input" type="submit" value="Crear formulario" variant="outline-primary" className="rounded-4" id="enviar"/>
+      </div>
     </Container>
+
             </div>
     )
 }

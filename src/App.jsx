@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 
 import Header from "./components/header/Header";
 import Formulario from "./components/formulario/Fomulario";
+import DiseñoCrearFormulario from './components/DiseñoCrearFormulario';
 
 
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Formulario/>
+      <DiseñoCrearFormulario/>
       <Footer/>
 
     </div>

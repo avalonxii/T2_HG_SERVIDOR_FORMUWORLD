@@ -11,6 +11,6 @@ import DiseñoCrearFormulario from './components/DiseñoCrearFormulario';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <DiseñoCrearFormulario />
+    <App/>
   </React.StrictMode>
 )

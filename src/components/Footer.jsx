@@ -10,16 +10,19 @@ import {
 
 
 export default function Footer() {
+
+  
   return (
     <>
+    
    <MDBFooter className='bg-grey text-center text-black'>
-      <MDBContainer className='p-4 pb-0'>
+      <MDBContainer className='p-4 pb-0' >
         <section className='mb-4'>
           <MDBBtn
             floating
             className='m-1'
             style={{ backgroundColor: '#3b5998' }}
-            href='#!'
+            href='https://www.facebook.com/campusfp/'
             role='button'
           >
             <MDBIcon fab icon='facebook-f' />
@@ -29,7 +32,7 @@ export default function Footer() {
             floating
             className='m-1'
             style={{ backgroundColor: '#55acee' }}
-            href='#!'
+            href='https://twitter.com/Campus_FP'
             role='button'
           >
             <MDBIcon fab icon='twitter' />
@@ -38,17 +41,8 @@ export default function Footer() {
           <MDBBtn
             floating
             className='m-1'
-            style={{ backgroundColor: '#dd4b39' }}
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab icon='google' />
-          </MDBBtn>
-          <MDBBtn
-            floating
-            className='m-1'
             style={{ backgroundColor: '#ac2bac' }}
-            href='#!'
+            href='https://www.instagram.com/campusfp_/'
             role='button'
           >
             <MDBIcon fab icon='instagram' />
@@ -58,7 +52,7 @@ export default function Footer() {
             floating
             className='m-1'
             style={{ backgroundColor: '#0082ca' }}
-            href='#!'
+            href='https://www.linkedin.com/school/campus-fp/'
             role='button'
           >
             <MDBIcon fab icon='linkedin-in' />
@@ -68,7 +62,7 @@ export default function Footer() {
             floating
             className='m-1'
             style={{ backgroundColor: '#333333' }}
-            href='#!'
+            href='https://github.com/avalonxii/T2_HG_SERVIDOR_FORMUWORLD'
             role='button'
           >
             <MDBIcon fab icon='github' />
@@ -76,9 +70,9 @@ export default function Footer() {
         </section>
       </MDBContainer>
 
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      <div className='text-center p-3' style={{ backgroundColor: '#5BC0F8'}}>
         ©2023 Copyright-
-        <a className='text-white' href='https://mdbootstrap.com/'>
+        <a className='text-black' href='https://campusfp.es/'>
         FormuWorld
         </a>
       </div>
