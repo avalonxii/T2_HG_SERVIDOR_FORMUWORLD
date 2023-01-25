@@ -7,12 +7,12 @@ import Logo from "../../assets/img/logo.png";
 
 function NavScrollExample() {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" bg="light" sticky="top">
       <Container>
         <Navbar.Brand href="#">
           <img src={Logo} alt="React Logo" />
         </Navbar.Brand>
-        <Navbar.Toggle  aria-controls="navbarScroll" />
+        <Navbar.Toggle  aria-controls="navbarScroll"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Container className="w-100 d-lg-flex d-flex-column gap-3">
     

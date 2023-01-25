@@ -17,7 +17,6 @@ export default function CabeceraFormu() {
           <Form.Control as="textarea" rows={3} />
         </Form.Group>
       </Form>
-      <Button as="input" type="submit" value="Enviar" variant="outline-primary" className="rounded-4"/>
     </Container>
   )
 }
