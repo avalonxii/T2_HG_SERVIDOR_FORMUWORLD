@@ -5,9 +5,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Logo from "../../assets/img/logo.png";
 
-function NavScrollExample() {
+function BarraNavegacion() {
   return (
-    <Navbar expand="lg" bg="light" sticky="top">
+    <Navbar expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#">
           <img src={Logo} alt="React Logo" />
@@ -44,4 +44,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default BarraNavegacion;
