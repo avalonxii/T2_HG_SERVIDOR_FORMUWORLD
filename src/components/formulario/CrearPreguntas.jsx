@@ -1,20 +1,26 @@
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import Preguntas from "./Preguntas";
-import { useState } from "react";
+import Pregunta from "./Pregunta";
+import { useState, useContext } from "react";
+import { FormularioContext } from "../../context/FormularioContext";
 
 export default function CrearPreguntas() {
+
+  
+
   const [numeroPreguntas, setnumeroPreguntas] = useState([]);
 
+  //añade las preguntas generadas al array de preguntas para luego mostarlo
   const handlerClickCreateFormu = () => {
-    setnumeroPreguntas([...numeroPreguntas, <Preguntas />]);
+    setnumeroPreguntas([...numeroPreguntas, <Pregunta />]);
   };
 
   return (
     <>
-      {numeroPreguntas.map((pregunta) => pregunta)}
+      { //muestra las preguntas en el array de preguntas 
+      numeroPreguntas.map((pregunta) => pregunta)}
 
-      <Preguntas />
+      <Pregunta />
 
       <Container className="d-flex justify-content-center pt-5">
         <Button

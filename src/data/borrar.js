@@ -1,4 +1,4 @@
-const ejemploFormus = [
+export const ejemploFormus = [
   {
     id: 0,
     title: "Titulo 1",

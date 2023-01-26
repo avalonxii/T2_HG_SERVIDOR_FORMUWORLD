@@ -4,9 +4,9 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 
-export default function Preguntas() {
+export default function Pregunta() {
 
-   const [numeroOpciones, setnumeroOpciones] = useState([]);
+  const [numeroOpciones, setnumeroOpciones] = useState([]);
 
   const handlerClickCreateOption = () => {
     setnumeroOpciones([...numeroOpciones, <Opcion />]);
