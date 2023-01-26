@@ -6,11 +6,13 @@ import { useState } from "react";
 
 export default function Preguntas() {
 
-  const [numeroOpciones, setnumeroOpciones] = useState([]);
-    
+   const [numeroOpciones, setnumeroOpciones] = useState([]);
+
   const handlerClickCreateOption = () => {
-    setnumeroOpciones([...numeroOpciones, <Opcion />])
-  };
+    setnumeroOpciones([...numeroOpciones, <Opcion />]);
+  }; 
+
+
 
   return (
     <Container className="border border-5 rounded-5 mt-5 pb-5" id="container">
@@ -27,9 +29,7 @@ export default function Preguntas() {
         </Form.Group>
       </Form>
 
-      <Container>
-      {numeroOpciones.map((opcion) => opcion)}
-      </Container>
+      <Container>{numeroOpciones.map((opcion) => opcion)}</Container>
 
       <Container className="d-flex justify-content-center mt-5">
         <Button
