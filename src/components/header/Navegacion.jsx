@@ -21,6 +21,10 @@ function NavScrollExample() {
                 Crear Formu
               </Button>
               
+              <Button href="#" variant="outline-secondary" className="sm-auto">
+                Ver Formus
+              </Button>
+
               <Button href="#" variant="outline-primary">
                 Get Started
               </Button>

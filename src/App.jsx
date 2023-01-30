@@ -1,5 +1,5 @@
 import Header from "./components/header/Header";
-import Formulario from "./components/formulario/Fomulario";
+import CrearFormu from "./components/formulario/CrearFomu";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Formulario />
+      <CrearFormu />
     </div>
   );
 }
