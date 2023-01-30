@@ -20,9 +20,7 @@ function NavScrollExample() {
               <Button href="#" variant="outline-secondary" className="sm-auto">
                 Crear Formu
               </Button>
-              <Button href="#" variant="outline-secondary">
-                Filtro
-              </Button>
+              
               <Button href="#" variant="outline-primary">
                 Get Started
               </Button>
