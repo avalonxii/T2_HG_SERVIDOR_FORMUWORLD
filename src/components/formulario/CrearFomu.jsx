@@ -5,12 +5,14 @@ import Pregunta from "./Pregunta";
 import Button from "react-bootstrap/Button";
 
 import { FormuContext } from "../../context/FormuContext";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useMemo } from "react";
 
 import { addUser } from "../../service/api";
 
 function Agregar() {
   const { formu, guardar, setGuardar } = useContext(FormuContext);
+
+  useMemo(() => guardar, [])
 
   const handlerSubmit = async (e) => {
     e.preventDefault();

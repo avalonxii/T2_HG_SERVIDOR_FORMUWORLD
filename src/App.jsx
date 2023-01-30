@@ -1,13 +1,14 @@
-import Header from "./components/header/Header";
-import CrearFormu from "./components/formulario/CrearFomu";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+import CardB from './components/formulario/CardB'
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <CrearFormu />
+      
+      {
+        
+      }
+
     </div>
   );
 }
