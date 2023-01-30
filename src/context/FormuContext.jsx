@@ -6,16 +6,13 @@ const formu = {
   titulo: "",
   descripcion: "",
   seccion: null
-};
-
-
+}
 
 export function FormualrioContextProvider(props) {
 
-  const [guardar, setGuardar] = useState(false)
 
   return (
-    <FormuContext.Provider value={{ formu, guardar, setGuardar }}>
+    <FormuContext.Provider value={{ formu }}>
       {props.children}
     </FormuContext.Provider>
   );

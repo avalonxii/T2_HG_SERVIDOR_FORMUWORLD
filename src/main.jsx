@@ -8,12 +8,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/header/Header";
 import AddFormu from "./routes/addFormu";
+import AllFormu from "./routes/AllFormu";
 import App from './App'
+import GetStarted from "./routes/GetStarted";
 
 const HeaderLayout = () => (
   <>
     <Header />
-
     <Outlet />
   </>
 );
@@ -32,12 +33,12 @@ const router = createBrowserRouter([
       } ,
       {
         path: '/todos',
-        element: <div>foo</div>,
-      }/*,
+        element: <AllFormu />,
+      },
       {
-        path: '/bar',
-        element: <div>foo</div>,
-      } */
+        path: '/started',
+        element: <GetStarted />,
+      } 
     ]
   },
 ]);

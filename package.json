@@ -13,6 +13,7 @@
     "axios": "1.2.6",
     "bootstrap": "^5.2.3",
     "cdbreact": "^1.5.4",
+    "cors": "2.8.5",
     "formik": "^2.2.9",
     "mdb-react-ui-kit": "^5.1.0",
     "mdbreact": "^5.2.0",

@@ -24,3 +24,13 @@ body {
 .none {
   display: none;
 }
+
+.link{
+  text-decoration: none;
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+}
+
+.App{
+  
+}
