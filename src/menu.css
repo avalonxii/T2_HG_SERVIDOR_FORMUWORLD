@@ -1,0 +1,73 @@
+
+
+.App .button {
+    --b: .1em;    /* border thickness */
+    --d: 20px;    /* the 3D depth */
+    --h: 1.2em;   /* the height */
+    --c: #3B8183; /* the color */
+    
+    --_s: calc(var(--d) + var(--b));
+    line-height: var(--h);
+    color: #0000;
+    text-shadow: 
+      0 calc(-1*var(--_t,0em)) var(--c), 
+      0 calc(var(--h) - var(--_t,0em)) #fff;
+    border: solid #0000;
+    overflow: hidden;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background:
+      linear-gradient(var(--c) 0 0) 100% 100%
+       /101% var(--_p,0%) no-repeat,
+      conic-gradient(at left var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at left var(--_s) bottom var(--_s),
+        #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(calc(var(--_i,var(--d))/-1),var(--_i,var(--d)));
+    clip-path: 
+      polygon(
+       var(--_i,var(--d)) calc(var(--d) - var(--_i,var(--d))), 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)),
+       calc(100% - var(--d) + var(--_i,var(--d))) calc(100% - var(--_i,var(--d))),
+      var(--_i,var(--d)) calc(100% - var(--_i,var(--d)))
+      );
+    transition: 0.5s;
+  }
+  .App .button:hover {
+    --_i: 0%;
+    --_t: var(--h);
+    --_p: 105%;
+  }
+  .App .button:active {
+    --_i: 5px;
+    box-shadow: 0 0 0 100vw inset #0009;
+    transition: 0s;
+  }
+  .App .button:focus-visible {
+    clip-path: none;
+    transform: none;
+    border-width: var(--b);
+    outline-offset: .1em;
+    background: var(--c);
+    color: #fff;
+    transition: 0s;
+  } 
+  
+  
+  .App  {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    background: #EBE3AA;
+  }
+
+  .App .button {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    padding: 0 .2em;
+    cursor: pointer;
+    margin: .1em;
+  }

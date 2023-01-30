@@ -1,21 +1,13 @@
-import Header from "./components/header/Header";
-import Formulario from "./components/formulario/Fomulario";
 
-
-
-
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./menu.css";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-
-      <Header />
-      <Formulario />
-
+      <Link to="/crear" className="button">
+        Formu!
+      </Link>
     </div>
   );
 }

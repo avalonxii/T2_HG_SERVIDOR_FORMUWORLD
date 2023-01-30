@@ -4,11 +4,39 @@ body{
 }
 
 body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-  }
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  background: rgb(60, 226, 255);
+  background: linear-gradient(
+      28deg,
+      rgba(60, 226, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 37%,
+      rgba(255, 255, 255, 1) 56%,
+      rgba(99, 247, 78, 1) 100%
+    )
+    no-repeat fixed;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.light {
+  background-color: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.none {
+  display: none;
+
+}
+
+.link{
+  text-decoration: none;
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+}
+
+.App{
+  
 }
