@@ -1,3 +1,8 @@
+body{
+    background: rgb(220,246,246);
+    background: linear-gradient(45deg, rgba(220,246,246,1) 0%, rgba(78,176,249,1) 33%, rgba(23,228,225,1) 62%, rgba(86,244,168,1) 85%) no-repeat fixed;
+}
+
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   background: rgb(60, 226, 255);
@@ -23,6 +28,7 @@ body {
 
 .none {
   display: none;
+
 }
 
 .link{

@@ -7,8 +7,9 @@ import Logo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 
 function NavScrollExample() {
+
   return (
-    <Navbar expand="lg" bg="light" sticky="top">
+    <Navbar expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#">
           <img src={Logo} alt="React Logo" />
@@ -50,4 +51,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default BarraNavegacion;
